@@ -10,7 +10,7 @@ def get_file_path():
     file_path = input('Please input the file path. Example ' + r'C:\Users\Test.csv' + '\n')
     file_path = file_path.replace("\\", "/")
 
-##Create function to list the column names, and ask the user which names and store it into array cols
+##function to list the column names, and ask the user which names and store it into array cols
 
 def get_column_names():
     data_within_file = pd.read_csv(file_path, nrows=0)
